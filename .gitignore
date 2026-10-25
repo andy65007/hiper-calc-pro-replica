@@ -1,0 +1,28 @@
+# Original and generated install artifacts
+*.apk
+*.apks
+*.aab
+*.idsig
+*.zip
+
+# Local analysis and tooling
+.tmp/
+tools/
+codex-session-*.md
+
+# Android build/test outputs
+android-app/.build/
+android-app/.test-classes*/
+
+# Never commit local signing material
+android-app/keystore/
+*.jks
+*.keystore
+*.p12
+
+# Editor and OS files
+.idea/
+.vscode/
+*.iml
+.DS_Store
+Thumbs.db

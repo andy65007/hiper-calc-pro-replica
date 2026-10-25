@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="cz.hipercalc.pro"
+    android:versionCode="287"
+    android:versionName="12.1.4">
+
+    <uses-sdk android:minSdkVersion="29" android:targetSdkVersion="34" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-feature android:name="android.hardware.camera" android:required="false" />
+    <uses-feature android:name="android.hardware.touchscreen" android:required="false" />
+
+    <application
+        android:allowBackup="true"
+        android:appComponentFactory="android.app.AppComponentFactory"
+        android:extractNativeLibs="false"
+        android:icon="@drawable/hipercalc_icon"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="false">
+
+        <activity
+            android:name="app.hipercalc.replica.CalculatorActivity"
+            android:exported="true"
+            android:screenOrientation="unspecified"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name="app.hipercalc.replica.HistoryActivity" android:exported="false" />
+        <activity android:name="app.hipercalc.replica.MemoryActivity" android:exported="false" />
+        <activity android:name="app.hipercalc.replica.ConstantsActivity" android:exported="false" />
+        <activity android:name="app.hipercalc.replica.ConversionsActivity" android:exported="false" />
+        <activity android:name="app.hipercalc.replica.SettingsActivity" android:exported="false" />
+        <activity android:name="app.hipercalc.replica.KeyboardParamsActivity" android:exported="false" />
+        <activity android:name="app.hipercalc.replica.KeysFunctionsActivity" android:exported="false" />
+        <activity android:name="app.hipercalc.replica.ThemeActivity" android:exported="false" />
+        <activity android:name="app.hipercalc.replica.DetailActivity" android:exported="false" />
+        <activity android:name="app.hipercalc.replica.SolutionActivity" android:exported="false" />
+        <activity android:name="app.hipercalc.replica.MatrixActivity" android:exported="false" />
+        <activity android:name="app.hipercalc.replica.ComplexActivity" android:exported="false" />
+        <activity android:name="app.hipercalc.replica.StatisticsActivity" android:exported="false" />
+        <activity android:name="app.hipercalc.replica.BitwiseActivity" android:exported="false" />
+        <activity android:name="app.hipercalc.replica.LimitTableActivity" android:exported="false" />
+        <activity android:name="app.hipercalc.replica.NumberTheoryActivity" android:exported="false" />
+        <activity android:name="app.hipercalc.replica.RecognitionActivity" android:exported="false" />
+        <activity android:name="app.hipercalc.replica.CropImageActivity" android:exported="false" />
+        <activity android:name="app.hipercalc.replica.HelpActivity" android:exported="false" />
+        <activity android:name="app.hipercalc.replica.AboutActivity" android:exported="false" />
+    </application>
+</manifest>
