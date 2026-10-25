@@ -3,7 +3,7 @@
 交付物是原生 Android APK/工程，不是 WebView、浏览器应用或 PWA。
 
 - 工程：[android-app](android-app)
-- 已签名 APK：[HiPER-Calc-Pro-12.1.4-replica-debug-signed.apk](HiPER-Calc-Pro-12.1.4-replica-debug-signed.apk)
+- APK：不纳入源码仓库，运行 `android-app\build.ps1` 自动构建并生成 `HiPER-Calc-Pro-12.1.4-replica-debug-signed.apk`
 - 构建说明：[android-app/README.md](android-app/README.md)
 
 ## APK 参数
